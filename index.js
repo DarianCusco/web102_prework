@@ -52,9 +52,8 @@ function addGamesToPage(games) {
             gameCard.classList.add("game-card")  //adds class to new div element
             gameCard.innerHTML = `
             <img class="game-img" src=${games[i].img} /> <h3>${games[i].name}</h3>
-            <caption>${games[i].description}</caption><br /> <br />
-            <caption>Backers: ${games[i].backers}<caption>`;
-            gamesContainer.append(gameCard);
+            <caption>${games[i].description}</caption><br /> <br />`;
+            gamesContainer.appendChild(gameCard);
             }
 }
 
